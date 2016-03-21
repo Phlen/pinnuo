@@ -1,0 +1,50 @@
+@import "compass/css3";
+@import "compass/layout";
+
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 540px;
+  overflow: hidden;
+
+  .slider-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .slider-item {
+    width: 100%;
+    height: 100%;
+    float: left;
+    background: no-repeat center bottom;
+    background-size: cover;
+  }
+
+  .trigger {
+    width: 1025px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    a {
+      top: 45%;
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      z-index: 2;
+      cursor: pointer;
+      background: no-repeat center;
+    }
+    .prev {
+      left: 0;
+      background-image: inline-image('pre.png');
+    }
+
+    .next {
+      right: 0;
+      background-image: inline-image('back.png');
+    }
+  }
+}
